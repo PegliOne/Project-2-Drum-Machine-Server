@@ -11,6 +11,18 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to "Home", root_path %> <!--Visible to everyone -->
+      <a href="#">Log In</a><!--Only Visible When not logged in -->
+      <a href="#">Add A New Drumpad</a> <!--Visible to all logged in users -->
+      <%= link_to "View Drumpads", drumpads_path %> <!--Visible to all logged in users -->
+      <a href="#">Add A New Sound</a> <!--Visible to all logged in users -->
+      <%= link_to "Add A New Sound", new_sound_path %> <!--Visible to all logged in users -->
+      <a href="#">View Sounds</a> <!--Visible to all logged in users -->
+      <%= link_to "View Users", users_path %> <!--Visible to all logged in users -->
+      <a href="#">Log Out</a> <!--Visible to all logged in users -->
+    </nav>
+    <h1>Drumpad Machine Admin Site</h1>
     <%= yield %>
   </body>
 </html>

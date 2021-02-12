@@ -1,0 +1,14 @@
+<h2><%= @drumpad.name %></h2>
+
+<p>Colour: <%= @drumpad.color %></p>
+
+<h3>Songs</h3>
+
+<% @sounds.each do |sounds| %>
+ <div class="song-info">
+   <p><strong>Name:</strong> <%= sounds.name %> </p>
+   <p><strong>Key Code</strong> <%= sounds.key_code %> </p>
+   <p><strong>Key Trigger</strong> <%= sounds.key_trigger %> </p>
+   <p><strong>URL</strong> <%= sounds.url %> </p>
+ </div>
+<% end %>

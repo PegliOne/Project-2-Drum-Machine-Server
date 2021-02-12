@@ -1,0 +1,8 @@
+<h2>Drumpads List</h2>
+
+<% @drumpads.each do |drumpad| %>
+    <p>
+      <%= link_to drumpad.name, drumpad_path(drumpad.id) %>
+    </p>
+
+<% end %>

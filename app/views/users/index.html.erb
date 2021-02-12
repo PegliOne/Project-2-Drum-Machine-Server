@@ -1,0 +1,9 @@
+<h2>Users List</h2>
+
+<p>The following people can use this site to create, edit and delete drumpads and sounds.</p>
+
+<% @users.each do |user| %>
+  <p>
+    Name: <%= user.name %>, Email: <%= user.email %>
+  </p>
+<% end %>

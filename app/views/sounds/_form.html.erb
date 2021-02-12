@@ -1,0 +1,31 @@
+<div class="section-group">
+  <%= form_for @sound do |f| %>
+    <!-- All the properties are required, since a flight must have all this properties to be bookable -->
+      <section>
+        <div>
+          <%= f.label :name %>
+          <%= f.text_field :name, :required => true, :placeholder => "Heater-1" %>
+        </div>
+        <div>
+          <%= f.label :key_code %>
+          <%= f.number_field :key_code, :required => true %>
+        </div>
+        <div>
+          <%= f.label :key_trigger %>
+          <%= f.text_field :key_trigger, :required => true %>
+        </div>
+        <div>
+          <%= f.label "URL" %>
+          <%= f.text_field :url, :required => true %>
+        </div>
+        <div>
+          <%= f.label :drumpad_id %>
+          <%= f.select :drumpad_id, Drumpad.pluck(:name, :id), :required => true %>
+        </div>
+
+          <%= f.submit "Submit" %>
+      </section>
+
+  <% end %>
+
+</div>
