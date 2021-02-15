@@ -19,7 +19,7 @@
           <%= f.text_field :url, :required => true %>
         </p>
         <p>
-          <%= f.label :drumpad_id %>
+          <%= f.label "Key Set" %>
           <%= f.select :drumpad_id, Drumpad.pluck(:name, :id), :required => true %>
         </p>
 

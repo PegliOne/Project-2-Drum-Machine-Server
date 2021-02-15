@@ -26,7 +26,7 @@ class DrumpadsController < ApplicationController
 
   def show
     @drumpad = Drumpad.find params[:id];
-    allSounds = Sound.all
+    allSounds = Sound.all.sort_by{ |sound| sound.id}
     @sounds = []
     allSounds.each do |sound|
       @sounds.push(sound)  if sound.drumpad_id == params[:id].to_i

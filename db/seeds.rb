@@ -12,8 +12,8 @@ u2 = User.create :name => "Lionel-James Pengilley", :email => 'leo@ga.co', :pass
 puts "#{ User.count } users."
 
 Drumpad.destroy_all
-d1 = Drumpad.create :name => "Basic Drumpad", :color => "grey"
-d2 = Drumpad.create :name => "Advanced Drumpad", :color => "red"
+d1 = Drumpad.create :name => "Basic Key Set", :color => "grey"
+d2 = Drumpad.create :name => "Advanced Key Set", :color => "red"
 puts "#{ Drumpad.count } drumpads."
 
 Sound.destroy_all
@@ -33,5 +33,5 @@ puts "#{ Sound.count } sounds."
 
 #Associations
 puts "Sounds and Drumpads."
-d1.sounds << s1 << s2 << s3 << s4 << s5 << s6
-d2.sounds << s7 << s8 << s9 << s10 << s11 << s12
+d1.sounds << s1 << s2 << s3 << s4 << s5 << s6 << s7 << s8 << s9
+d2.sounds << s10 << s11 << s12
