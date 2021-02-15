@@ -16,6 +16,9 @@ Live Website: Link coming soon
 
 ## Website Production Updates
 
+### 15/02/21 6:40pm
+Step Four in Progress: Server successful deployed to Heroku. JSON files added. The next step is to make AJAX requests to the server from the React app, then review and optimise the code and styling.
+
 ### 15/02/21 5:00pm
 Step Three in Progress: Permissions and basic styling added. Database re-seeded with data from the React App. The next step is to deploy to Heroku and add the JSON files, so an AJAX request can be made from the React App.
 
@@ -55,4 +58,5 @@ Step Two in Progress: Database set up and seeded. The ability to view lists of u
 ## Step Five
 * Review and optimise code wherever possible
 * Test the server and the React app as a potential user to make sure everything works
+* Improve Styling
 * Commit updated version to Heroku and edit readme file
