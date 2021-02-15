@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DrumMachine</title>
+    <title>Drum Machine</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,14 +13,16 @@
   <body>
     <nav>
       <%= link_to "Home", root_path %> <!--Visible to everyone -->
-      <a href="#">Log In</a><!--Only Visible When not logged in -->
-      <a href="#">Add A New Drumpad</a> <!--Visible to all logged in users -->
-      <%= link_to "View Drumpads", drumpads_path %> <!--Visible to all logged in users -->
-      <a href="#">Add A New Sound</a> <!--Visible to all logged in users -->
-      <%= link_to "Add A New Sound", new_sound_path %> <!--Visible to all logged in users -->
-      <a href="#">View Sounds</a> <!--Visible to all logged in users -->
-      <%= link_to "View Users", users_path %> <!--Visible to all logged in users -->
-      <a href="#">Log Out</a> <!--Visible to all logged in users -->
+      <%= link_to "Log In", new_session_path %><!-- Only Visible When Not logged in -->
+      <% if @current_user.present? %>
+        <%= link_to "View Your Details", user_path(@current_user.id) %><!--Only Visible When logged in -->
+        <%= link_to "Add A New Drumpad", new_drumpad_path %> <!--Visible to all logged in users -->
+        <%= link_to "View Drumpads", drumpads_path %> <!--Visible to all logged in users -->
+        <%= link_to "Add A New Sound", new_sound_path %> <!--Visible to all logged in users -->
+        <%= link_to "View Sounds", sounds_path %> <!--Visible to all logged in users -->
+        <%= link_to "View Users", users_path %> <!--Visible to all logged in users -->
+        <%= link_to "Log Out", session_path(@current_user.id), :method => "delete" %>
+      <% end %>
     </nav>
     <h1>Drumpad Machine Admin Site</h1>
     <%= yield %>

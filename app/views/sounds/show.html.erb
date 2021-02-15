@@ -1,2 +1,11 @@
-<h1>Sounds#show</h1>
-<p>Find me in app/views/sounds/show.html.erb</p>
+<h2><%= @sound.name %></h2>
+
+<p><strong>Key Code: </strong><%= @sound.key_code %><strong>Key Trigger: </strong><%= @sound.key_trigger %></p>
+<p><strong>URL:</strong><%= @sound.url %></p>
+<p><%= link_to "View All Drumpad Songs", drumpad_path(@sound.drumpad_id) %></p>
+
+<h3>Edit Sound </h3>
+
+<%= render :partial => "form" %>
+
+<%= button_to "Delete Sound", @sound, :method => "delete" %>

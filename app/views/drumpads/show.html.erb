@@ -1,14 +1,12 @@
-<h2><%= @drumpad.name %></h2>
+<%= link_to "Add Sounds", new_sound_path %>
 
-<p>Colour: <%= @drumpad.color %></p>
+<h2><%= @drumpad.name %> (<%= @drumpad.color.capitalize %>)</h2>
 
-<h3>Songs</h3>
-
-<% @sounds.each do |sounds| %>
+<% @sounds.each do |sound| %>
  <div class="song-info">
-   <p><strong>Name:</strong> <%= sounds.name %> </p>
-   <p><strong>Key Code</strong> <%= sounds.key_code %> </p>
-   <p><strong>Key Trigger</strong> <%= sounds.key_trigger %> </p>
-   <p><strong>URL</strong> <%= sounds.url %> </p>
+   <h3><%= link_to sound.name, sound_path(sound.id) %> </h3>
+   <p><strong>Key Code</strong> <%= sound.key_code %> </p>
+   <p><strong>Key Trigger</strong> <%= sound.key_trigger %> </p>
+   <p><strong>URL</strong> <%= sound.url %> </p>
  </div>
 <% end %>

@@ -1,2 +1,5 @@
-<h1>Drumpads#edit</h1>
-<p>Find me in app/views/drumpads/edit.html.erb</p>
+<h1>Edit <%= @drumpad.name %></h1>
+
+<p>Use this form to edit the <%= @drumpad.name %></p>
+
+<%= render :partial => "form" %>

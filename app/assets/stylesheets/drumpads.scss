@@ -1,8 +1,24 @@
 // Place all the styles related to the Drumpads controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+nav {
+  text-align: right;
+}
+
 a {
   margin: 1% 2%;
+}
+
+strong {
+  margin: 1%;
+}
+
+.edit {
+  color: orange;
+}
+
+.delete {
+  color: red;
 }
 
 .song-info {

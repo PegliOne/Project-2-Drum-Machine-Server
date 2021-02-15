@@ -1,0 +1,26 @@
+<h2>Log In</h2>
+
+<p>Use this form to log in and start adding drumpads and sounds.</p>
+
+<% if flash[:error].present? %>
+  <p> <%= flash[:error] %></p>
+<% end %>
+
+<div class="section-group">
+  <%= form_tag sessions_path do %>
+      <section>
+        <div>
+          <%= label_tag :email %>
+          <%= email_field_tag :email, nil, :required => true, :autofocus => true %>
+        </div>
+        <div>
+          <%= label_tag :password %>
+          <%= password_field_tag :password, nil, :required => true %>
+        </div>
+
+        <%= submit_tag "Log In" %>
+      </section>
+
+  <% end %>
+
+</div>

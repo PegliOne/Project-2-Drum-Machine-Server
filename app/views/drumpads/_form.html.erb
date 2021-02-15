@@ -1,0 +1,17 @@
+<div class="section-group">
+  <%= form_for @drumpad do |f| %>
+      <section>
+        <div>
+          <%= f.label :name %>
+          <%= f.text_field :name, :required => true, :placeholder => "Heater-1" %>
+        </div>
+        <div>
+          <%= f.label :color %>
+          <%= f.text_field :color %>
+        </div>
+        <%= f.submit "Submit" %>
+      </section>
+
+  <% end %>
+
+</div>
