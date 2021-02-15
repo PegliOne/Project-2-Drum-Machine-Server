@@ -1,4 +1,6 @@
 class DrumpadsController < ApplicationController
+  before_action :check_for_login
+
   def index
     @drumpads = Drumpad.all.sort_by { |drumpad| drumpad.id}
   end

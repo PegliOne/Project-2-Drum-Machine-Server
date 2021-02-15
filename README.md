@@ -16,6 +16,9 @@ Live Website: Link coming soon
 
 ## Website Production Updates
 
+### 15/02/21 5:00pm
+Step Three in Progress: Permissions and basic styling added. Database re-seeded with data from the React App. The next step is to deploy to Heroku and add the JSON files, so an AJAX request can be made from the React App.
+
 ### 15/02/21 11:40am
 Step Two Complete: CRUD systems added for drumpads and sounds. The ability to login, logout and edit user details was also added. The ability to sign up will not be added, since the site is meant to be exclusively for the owners of the Drum Machine app. The next step is to add styling and ensure that the site can only be used by logged into users.
 

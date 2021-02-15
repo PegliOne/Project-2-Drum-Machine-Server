@@ -1,26 +1,61 @@
 // Place all the styles related to the Drumpads controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  margin: 2% 5%;
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 1.5rem;
+}
+
 nav {
+  width: 100%;
   text-align: right;
 }
 
-a {
+nav a {
   margin: 1% 2%;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 4rem;;
+}
+
+p {
+  margin: 3%;
+}
+
+a {
+  margin: 5% 3%;
+  line-height: 50px;
 }
 
 strong {
   margin: 1%;
 }
 
+input, select {
+  font-size: inherit;
+}
+
 .edit {
-  color: orange;
+  margin: 1%;
+  color: darkorange;
+  text-decoration: none;
 }
 
 .delete {
+  margin: 1%;
   color: red;
+  text-decoration: none;
 }
 
 .song-info {
-  margin: 2% 0;
+  display: inline-block;
+  width: 30%;
+}
+
+.url {
+  font-size: 0.8rem;
 }

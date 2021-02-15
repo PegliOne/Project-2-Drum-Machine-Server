@@ -1,4 +1,4 @@
-<%= link_to "Add Sounds", new_sound_path %>
+<%= link_to "Click Here To Add More Sounds", new_sound_path %>
 
 <h2><%= @drumpad.name %> (<%= @drumpad.color.capitalize %>)</h2>
 
@@ -7,6 +7,8 @@
    <h3><%= link_to sound.name, sound_path(sound.id) %> </h3>
    <p><strong>Key Code</strong> <%= sound.key_code %> </p>
    <p><strong>Key Trigger</strong> <%= sound.key_trigger %> </p>
-   <p><strong>URL</strong> <%= sound.url %> </p>
+   <p><span class="url"><%= sound.url %></span></p>
  </div>
 <% end %>
+
+<%= link_to "Delete Drumpad", drumpad_path(@drumpad.id), :method => "delete", :class => "delete" %>

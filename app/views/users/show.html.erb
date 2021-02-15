@@ -8,16 +8,16 @@
 <div class="section-group">
   <%= form_for @user do |f| %>
       <section>
-        <div>
-          <%= f.label :name %>
+        <p>
+          <strong><%= f.label :name %></strong>
           <%= f.text_field :name, :required => true %>
-        </div>
-        <div>
-          <%= f.label :email %>
+        </p>
+        <p>
+          <strong><%= f.label :email %></strong>
           <%= f.email_field :email, :required => true %>
-        </div>
+        </p>
 
-        <%= f.submit "Submit" %>
+        <%= f.submit "Edit Details" %>
       </section>
 
   <% end %>

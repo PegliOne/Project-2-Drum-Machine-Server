@@ -2,9 +2,8 @@
 
 <p>These are all the sounds that have been created for the Drum Machine app.</p>
 
-<% @sounds.each do |sound| %>
-    <p>
-      <%= link_to sound.name, sound_path(sound.id) %>
-    </p>
-
-<% end %>
+<p id="sound-list">
+  <% @sounds.each do |sound| %>
+    <%= link_to sound.name, sound_path(sound.id) %>
+  <% end %>
+</p>

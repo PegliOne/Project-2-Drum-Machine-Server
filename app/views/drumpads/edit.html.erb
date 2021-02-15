@@ -1,5 +1,6 @@
-<h1>Edit <%= @drumpad.name %></h1>
+<h2>Edit <%= @drumpad.name %></h2>
 
-<p>Use this form to edit the <%= @drumpad.name %></p>
+<p>Use this form to edit <%= @drumpad.name %>'s details.</p>
+<%= link_to "You can add new sounds here", new_sound_path %>
 
 <%= render :partial => "form" %>

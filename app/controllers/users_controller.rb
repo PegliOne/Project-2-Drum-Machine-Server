@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  before_action :check_for_login
+  before_action :check_for_specific_user, only: [:show, :update]
+
   def index
     @users = User.all
   end
