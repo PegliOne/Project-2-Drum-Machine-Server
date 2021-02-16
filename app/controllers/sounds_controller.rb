@@ -1,5 +1,5 @@
 class SoundsController < ApplicationController
-  before_action :check_for_login
+  # before_action :check_for_login
 
   def index
     @sounds = Sound.all.sort_by{ |sound| sound.id }
