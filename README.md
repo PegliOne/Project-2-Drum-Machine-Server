@@ -2,7 +2,10 @@
 
 A server for the Drum Machine React App, that allows the owners of the App to login and add/edit/delete drumpads and sounds.
 
-Live Website: Link coming soon
+Live Website: [https://drum-machine-server.herokuapp.com/]
+
+## Ongoing Issues
+* The requirement to be logged in before accessing the sounds pages/functions was removed to enable the React App to access sounds.json. I might want to re-enable it for other pages on the site.
 
 ## Further Improvements
 * To be added later
@@ -16,8 +19,11 @@ Live Website: Link coming soon
 
 ## Website Production Updates
 
+### 16/02/21 3:20pm
+Step Four Complete: CORS successfully enabled for the Server. An AJAX request for the sounds data was added to the Drum Machine React App, so it can access sounds.json
+
 ### 15/02/21 6:40pm
-Step Four in Progress: Server successful deployed to Heroku. JSON files added. The next step is to make AJAX requests to the server from the React app, then review and optimise the code and styling.llllll
+Step Four in Progress: Server successful deployed to Heroku. JSON files added. The next step is to make AJAX requests to the server from the React app, then review and optimise the code and styling.
 
 ### 15/02/21 5:00pm
 Step Three in Progress: Permissions and basic styling added. Database re-seeded with data from the React App. The next step is to deploy to Heroku and add the JSON files, so an AJAX request can be made from the React App.
@@ -33,7 +39,7 @@ Step Two in Progress: Database set up and seeded. The ability to view lists of u
 ### Step One
 * Create a new Ruby on Rails project
 * Design, create and seed a database with information about users, drumpads, sounds and how they're connected
-* Set up the routes, controllors and views needed for the website
+* Set up the routes, controllers and views needed for the website
 * Add the basic site layout to application.html.erb (navber, headings, etc.)
 * Commit initial version to GitHub and edit readme file
 
@@ -52,11 +58,12 @@ Step Two in Progress: Database set up and seeded. The ability to view lists of u
 
 ### Step Four
 * Add JSON files, so that the sound and drumpad data can be accessed from the React App
-* Link the React App to the JSON data via AJAX requests (work with team mates to achieve this)
+* Link the React App to the sounds JSON data via AJAX requests (work with team mates to achieve this)
 * Commit updated version to Heroku and edit readme file (add heroku link to the description)
 
-## Step Five
+## Step Five - bonus
+* Link the React App to the drumpads JSON data via AJAX requests (work with team mates to achieve this)
+* Improve Styling
 * Review and optimise code wherever possible
 * Test the server and the React app as a potential user to make sure everything works
-* Improve Styling
 * Commit updated version to Heroku and edit readme file
