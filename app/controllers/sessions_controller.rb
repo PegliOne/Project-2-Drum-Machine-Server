@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
-  before_action :check_for_no_login, except: [:destroy]
-  before_action :check_for_login, only: [:destroy]
+  # before_action :check_for_no_login, except: [:destroy]
+  # before_action :check_for_login, only: [:destroy]
 
   def new
   end
