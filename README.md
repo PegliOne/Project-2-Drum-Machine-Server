@@ -63,7 +63,7 @@ Step Two in Progress: Database set up and seeded. The ability to view lists of u
 
 ## Step Five - bonus
 * Link the React App to the drumpads JSON data via AJAX requests (work with team mates to achieve this)
-* Improve Styling
+* Improve Stylingffffffggggg
 * Review and optimise code wherever possible
 * Test the server and the React app as a potential user to make sure everything works
 * Commit updated version to Heroku and edit readme file
