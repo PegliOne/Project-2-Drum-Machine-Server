@@ -12,16 +12,18 @@
   <body>
     <nav>
       <%= link_to "Home", root_path %> <!--Visible to everyone -->
-      <% if @current_user.present? %>
+      <% if @current_user.nil? %>
+        <%= link_to "Log In", new_session_path %><!-- Only Visible When Not logged in -->
+        <%= link_to "View Key Sets", drumpads_path %> <!--Visible to everyone, but listed here to maintain order -->
+        <%= link_to "View Sounds", sounds_path %> <!--Visible to everyone, but listed here to maintain order -->
+      <% else %>
         <%= link_to "View Your Details", user_path(@current_user.id) %><!--Only Visible When logged in -->
         <%= link_to "Add A New Key Set", new_drumpad_path %> <!--Visible to all logged in users -->
-        <%= link_to "View Key Sets", drumpads_path %> <!--Visible to all logged in users -->
+        <%= link_to "View Key Sets", drumpads_path %> <!--Visible to everyone, but listed here to maintain order -->
         <%= link_to "Add A New Sound", new_sound_path %> <!--Visible to all logged in users -->
-        <%= link_to "View Sounds", sounds_path %> <!--Visible to all logged in users -->
+        <%= link_to "View Sounds", sounds_path %> <!--Visible to everyone, but listed here to maintain order -->
         <%= link_to "View Users", users_path %> <!--Visible to all logged in users -->
         <%= link_to "Log Out", session_path(@current_user.id), :method => "delete" %>
-      <% else %>
-        <%= link_to "Log In", new_session_path %><!-- Only Visible When Not logged in -->
       <% end %>
     </nav>
     <h1>Drum Machine Admin Site</h1>
