@@ -1,10 +1,10 @@
 <p>Welcome to the Drum Machine Admin Site.</p>
 
 <% if @current_user.nil? %>
-  <p>Log in to start edit the drumpads and sounds.</p>
+  <p>Log in to start edit the key sets and sounds.</p>
   <%= link_to "Log In", new_session_path %>
 <% else %>
   <p> Use the buttons below to add key sets and sounds.</p>
-  <%= link_to "Add A New Drumpad", new_drumpad_path %>
+  <%= link_to "Add A New Key Set", new_drumpad_path %>
   <%= link_to "Add A New Sound", new_sound_path %>
 <% end %>

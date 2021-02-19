@@ -4,11 +4,11 @@ A server for the Drum Machine React App, that allows the owners of the App to lo
 
 Live Website: [https://drum-machine-server.herokuapp.com/]
 
-## Ongoing Issues
-* The requirement to be logged in before accessing the sounds pages/functions was removed to enable the React App to access sounds.json. I might want to re-enable it for other pages on the site.
-
 ## Further Improvements
-* To be added later
+
+* The requirement to be logged in before accessing the sounds pages/functions was removed from the index pages specifically to enable the React App to access sounds.json. This prevents non-logged in users from editing the data, but not from accessing it. A possible improvement is to allow only the React app to access the database
+
+* Configure the server to upload sounds to Cloudinary and enable the React app to access sounds from Cloudinary
 
 ## Technologies Used
 * HTML (with embedded Ruby)
@@ -18,6 +18,10 @@ Live Website: [https://drum-machine-server.herokuapp.com/]
 * Heroku (for deployment)
 
 ## Website Production Updates
+
+### 19/02/21 12:40pm
+
+Step Five Complete: The React App was successfully configured to use data from the Server. An attempt was made to upload files to Cloudinary, but that feature was removed because it would be too difficult to incorporate into the React App. Styling was improved and files optimised (unnecessary files and code were removed), though comments on how to use Cloudinary were left in, to enable the use of Cloudinary in further updates.
 
 ### 16/02/21 3:20pm
 Step Four Complete: CORS successfully enabled for the Server. An AJAX request for the sounds data was added to the Drum Machine React App, so it can access sounds.json
@@ -63,7 +67,7 @@ Step Two in Progress: Database set up and seeded. The ability to view lists of u
 
 ## Step Five - bonus
 * Link the React App to the drumpads JSON data via AJAX requests (work with team mates to achieve this)
-* Improve Stylingffffffggggg
+* Improve Styling
 * Review and optimise code wherever possible
 * Test the server and the React app as a potential user to make sure everything works
 * Commit updated version to Heroku and edit readme file

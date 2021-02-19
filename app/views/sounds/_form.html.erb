@@ -16,7 +16,7 @@
         </p>
         <p>
           <%= f.label "URL" %>
-          <%= f.text_field :url, :required => true %>
+          <%= f.text_field :url, :required => true %><!--Use cl_upload :url, :resource_type => "auto" for Cloudinary-->
         </p>
         <p>
           <%= f.label "Key Set" %>
