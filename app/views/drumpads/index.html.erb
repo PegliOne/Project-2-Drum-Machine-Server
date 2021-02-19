@@ -3,8 +3,10 @@
 <% @drumpads.each do |drumpad| %>
     <p>
       <%= link_to drumpad.name, drumpad_path(drumpad.id) %>
-      <%= link_to "Edit", edit_drumpad_path(drumpad.id), :class => "edit" %>
-      <%= link_to "Delete", drumpad_path(drumpad.id), :method => "delete", :class => "delete" %>
+      <% if @current_user.present? %>
+        <%= link_to "Edit", edit_drumpad_path(drumpad.id), :class => "edit" %>
+        <%= link_to "Delete", drumpad_path(drumpad.id), :method => "delete", :class => "delete" %>
+      <% end %>  
     </p>
 
 <% end %>
