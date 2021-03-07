@@ -17,7 +17,7 @@ Live Website: https://drum-machine-server.herokuapp.com/
 * PostgreSQL
 * Heroku (for deployment)
 
-## Website Production Updates
+## Production Updates
 
 ### 19/02/21 12:40pm
 
@@ -38,7 +38,7 @@ Step Two Complete: CRUD systems added for drumpads and sounds. The ability to lo
 ### 12/02/21 11:40pm
 Step Two in Progress: Database set up and seeded. The ability to view lists of users, drumpads and sounds was also added. The next step is to complete the CRUD systems for users and drumpads, then add the ability to log in, log out and edit user details.
 
-## Website Production Plan
+## Production Plan
 
 ### Step One
 * Create a new Ruby on Rails project
