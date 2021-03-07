@@ -2,7 +2,7 @@
 
 A server for the Drum Machine React App, that allows the owners of the App to login and add/edit/delete drumpads and sounds.
 
-Live Website: [https://drum-machine-server.herokuapp.com/]
+Live Website: https://drum-machine-server.herokuapp.com/
 
 ## Further Improvements
 
